@@ -1,0 +1,30 @@
+//Problem: 
+//Ek aisa function bnao jismain jb koi string do like "Hamza" to uska output ulta aye like "azmah"..
+
+const reverseString = (value) => {
+    let split = value.split("");
+    let reverse = split.reverse();
+    let joinReverse = reverse.join("")
+    return joinReverse
+}
+const answer = reverseString("usama");
+console.log(answer)
+
+//2nd Approach
+const Reverse = (item) =>  {
+
+  
+    let newString = "";
+    for (let i = item.length - 1; i >= 0; i--) {
+        newString += item[i];
+    }
+    return newString;
+}
+
+const result = Reverse("usama");
+console.log(result);
+
+//3rd Approach
+const reverseString = (value) => value.split("").reverse().join("");
+const answer = reverseString("USama");
+console.log(answer)
